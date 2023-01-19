@@ -1393,7 +1393,7 @@ footer {
         position: relative;
     }
     .slide>img {
-        margin-top: 80px;
+        margin-top: 90px;
     }
     .slide .util {
         position: absolute;
@@ -1443,7 +1443,7 @@ footer {
         left: 40px;
     }
     .sub_logo img {
-        width: 60px;
+        width: 70px;
         height: auto;
     }
     
@@ -1454,8 +1454,8 @@ footer {
         top: 35px;
         background: url(../img/icon/menu_toggle_btn.png) no-repeat;
         background-size: cover;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         text-indent: -9999px;
     }
     
@@ -1495,7 +1495,10 @@ footer {
     .fes_title {
         margin-left: 0px;
         margin-bottom: 60px;
-
+    }
+    .fes_title h2 {
+        display: block;
+        width: 100%;
     }
     .fes_title span {
         display: none;
@@ -1559,7 +1562,7 @@ footer {
         border-radius: 15%;
         width: 120px;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 30px;
     }
     .actList li:hover {
         opacity: 0.5;
