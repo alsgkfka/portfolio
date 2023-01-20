@@ -209,6 +209,39 @@ nav {
     display: none;
 }
 
+.sub_menu {
+    position: absolute;
+    width: 100%;
+    top: -400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 50px;
+    border-radius: 10% 10% 0 0;
+}
+.sub_menu ul li {
+    font-size: 24px;
+    color: #333;
+    line-height: 2;
+}
+.sub_menu ul li:nth-child(1) {
+    font-size: 60px;
+    font-weight: bold;
+    color: #6b71a0;
+    opacity: 0.5;
+}
+.sub1 {}
+.sub1 ul {}
+.sub1 li
+
+.sub2 {
+    display: none;
+}
+.sub3 {
+    display: none;
+}
+.sub4 {
+    display: none;
+}
+
 /* menu */
 .menu_toggle_btn {
     display: none;
@@ -1560,6 +1593,7 @@ footer {
         width: 120px;
         text-align: center;
         padding-top: 25px;
+        margin-top: 0 auto;
     }
     .actList li:hover {
         opacity: 0.5;
@@ -1620,7 +1654,7 @@ footer {
     .infoBtn {
         font-size: 16px;
         width: 100px;
-        margin: 0 40px;
+        margin: 0 auto;
         margin-top: 50px;
     }
     .time {
@@ -1630,11 +1664,11 @@ footer {
         font-size: 16px;
     }
     .time ul {
-        margin: 10px 10px;
+        margin: 10px auto;
     }
     .time li {}
     .time li a {
-        padding: 8px 10px;
+        padding: 8px;
     }
     .time i {
         font-size: 16px;
@@ -1687,32 +1721,330 @@ footer {
     .topBtn a {
         font-size: 18px;
     }
+}
+
+
+/* ******375px-420px****** */
+@media(min-width:375px) and (max-width:420px){
+    #wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    
+    /* 메인헤더 */
+    header {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .slide>img {
+        margin-top: 80px;
+    }
+    .slide .util {
+        position: absolute;
+        right: 80px;
+        top: 25px;
+    }
+    .util input {
+        display: none;
+    }
+    .util li {
+        padding: 15px 60px;
+    }
+    .util li i {
+        font-size: 14px;
+        color: #011b29;
+    }
+    
+    .util li:nth-child(2) {
+        position: absolute;
+        right: -40px;
+        top: 0;
+    }
+    
+
+    .icon {
+        display: none;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15% 15% 0 0 ;
+    }
+    
+    nav {
+        display: none;
+    }
+
+
+    .logo {
+        display: none;
+    }
+    .sub_logo {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+    .sub_logo img {
+        width: 60px;
+        height: auto;
+    }
+    
+    .menu_toggle_btn {
+        display: block;
+        position: absolute;
+        right: 50px;
+        top: 35px;
+        background: url(../img/icon/menu_toggle_btn.png) no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        text-indent: -9999px;
+    }
+    
+
+    /* 테마여행 */
+    .theme {
+        background-color: #011b29;
+        margin: 0;
+        padding-top: 50px;
+    }
+    .theme h2 {
+        color: #fff;
+    }
+    .conBox {
+        margin-top: 10px;
+    }
+    .themeL li {
+        display: none;
+    }
+    
+    .themeR {
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 0 0;
+    }
+    
+    /* 축제&전시 */
+    .festival {
+        margin-top: 0;
+        overflow: hidden;
+    }
+    .fesBox {
+        display: block;
+        width: 100%;
+        margin-left: -80px;
+    }
+    .fes_title {
+        margin-left: 0px;
+        margin-bottom: 50px;
+
+    }
+    .fes_title span {
+        display: none;
+    }
+    .imgList {
+        display: block;
+        margin-top: 2px;
+        z-index: 10;
+    }
+    .imgList li {
+        margin: 0 5px;
+    }
+    .imgList img {
+        width: 100px;
+    }
 
     
-/* Order Setting */
-.main {
-    order: 1;
-}
-.theme {
-    order: 5;
-}
-.festival {
-    order: 3;
-}
-.act_reservation {
-    order: 4;
-}
-.bg {
-    order: 2;
-}
-.guide {
-    order: 6;
-}
-footer {
-    order: 7;
-}
+    
+    .more img {
+        position: absolute;
+        right: 20px;
+        top: 130px;
+        width: 35px;
+        height: auto;
+    }
+    .btn {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+    .btn img {
+        width: 30px;
+        height: auto;
+    }
+    .fireworks {
+        display: none;
+    }
+    
+    
+    /* 체험활동 안내예약 */
+    .act_reservation {
+        margin-top: 60px;
+    }
+    .act_title h2 {}
+    .act_title span {
+        display: none;
+    }
+    .actList {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .actList ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .actList li {
+        font-size: 14px;
+        opacity: 1;
+        background-color: #f5ea61;
+        border-radius: 30%;
+        width: 80px;
+        height: 25px;
+        text-align: center;
+        padding-top: 20px;
+        margin: 0 auto;
+    }
+    .actList li:hover {
+        opacity: 0.5;
+    }
+    .actList li span {
+        display: none;
+    }
+    .actInfo1 {
+        display: none;
+    }
+
+    
+    /* 공지사항 */
+    .bg {
+        margin-top: 60px;
+        padding: 30px 0;
+        width: 100%;
+        height: 600px;
+    }
+    .star {
+        width: 100%;
+        height: auto;
+    }
+    .notice .more {
+        position: absolute;
+        right: 0;
+        top: -90px;
+    }
+    
+    .notice ul {
+        margin-top: 35px;
+    }
+    .notice li {
+        margin: 10px 0;
+        padding: 5px 10px;
+    }
+    .notice li a {
+        font-size: 12px;
+    }
+    
+    /* 오시는길 */
+    .map {
+        width: 100%;
+        height: 200px;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        position: relative;
+    }
+    .banner {
+        display: none;
+    }
+    .map h2 {
+        margin-bottom: 30px;
+    }
+    .mapInfo {
+        position: absolute;
+        display: flex;
+        top: 260px;
+        width: 100%;
+        height: 100px;
+        background-color: transparent;
+    }
+    .infoBtn {
+        font-size: 16px;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .time {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .time span {
+        font-size: 16px;
+    }
+    .time ul {
+        margin: 10px auto;
+    }
+    .time li {}
+    .time li a {
+        padding: 10px;
+        margin:0 10px;
+    }
+    .time i {
+        font-size: 16px;
+    }
+    
+    
+    
+    /* 여행도우미 */
+    .guide {
+        margin-top: 30px;
+    }
+    .guideList {
+        margin: 30px 10px;
+    }
+    .guideList i {
+        font-size: 30px;
+    }
+    .guideList a {
+        font-size: 16px;
+    }
+    
+    
+    /* footer */
+    footer {
+        margin-top: 50px;
+    }
+
+    .info {
+        display: block;
+        margin-left: 30px;
+    }
+    .tel li {
+        font-size: 12px;
+    }
+
+    .call>h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /* topBtn */
+    .topBtn {
+        right: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    .topBtn i {
+        font-size: 0px;
+    }
+    .topBtn a {
+        font-size: 18px;
+    }
 }
 
 /****1450px or More****/
 @media(min-width:1450px){}
-
