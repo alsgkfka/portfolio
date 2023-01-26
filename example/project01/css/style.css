@@ -27,22 +27,71 @@ img {
 body {
     font-family: 'Jua', sans-serif;
 }
+
+
+.title {
+    position: relative;
+}
+
 h2 {
     font-size: 32px;
     letter-spacing: 2px;
     font-weight: normal;
-    position: relative;
+    z-index: 2;
 }
 .titleIcon {
     position: absolute;
     width: 50px;
     height: auto;
-    top: -20px;
-    left: -20px;
+    left: -10px;
+    top: -25px;
     opacity: 0.7;
     animation: title 15s linear infinite;
+    z-index: -1;
 }
-/* @keyframes title {
+
+
+.act_title>.titleIcon {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left: 24%;
+    top: -10px;
+    opacity: 0.6;
+    animation: title 15s linear infinite;
+    z-index: -1;
+}
+.fes_title>.titleIcon {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left: -25px;
+    top: -25px;
+    opacity: 0.6;
+    animation: title 15s linear infinite;
+    z-index: -1;
+}
+.notice>.titleIcon {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left: -25px;
+    top: -25px;
+    opacity: 0.6;
+    animation: title 20s linear infinite;
+}
+.map>.title .titleIcon {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    left: -25px;
+    top: -25px;
+    opacity: 0.6;
+    animation: title 20s linear infinite;
+}
+
+
+@keyframes title {
     0% {
         transform: rotate(0deg);
     }
@@ -58,17 +107,21 @@ h2 {
     100% {
         transform: rotate(360deg);
     }
-} */
+}
+
+
+
 /* topBtn */
 .topBtn {
     position: fixed;
-    right: 50px;
+    right: 25px;
     bottom: 50px;
     background: url(../img/icon/top_btn.png) no-repeat center center;
     background-size: contain;
     width: 100px;
     height: 100px;
     opacity: 0.6;
+    z-index: 9999;
 }
 .topBtn:hover {
     opacity: 1;
@@ -112,7 +165,9 @@ header {
 .util input:focus {
     outline: none;
 }
-.util li {}
+.util li {
+    cursor: pointer;
+}
 .util li i {
     font-size: 20px;
     color: #fff;
@@ -123,11 +178,55 @@ header {
     right: 25px;
     top: 0;
 }
+.util li:hover i {
+    opacity: 1;
+    scale: 1.1;
+}
+.lang {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    width: 100px;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+.lang ul {
+    display: block;
+}
+.lang li {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 10px;
+    color: #555;
+}
+.lang p {
+    display: block;
+    width: 80%;
+}
+.lang li:hover {
+    color: #000;
+}
+.lang span {
+    display: none;
+    width: 20%;
+    margin-right: 20px;
+}
+.lang span.on {
+    display: block;
+    width: 20%;
+    margin-right: 20px;
+    color: #000;
+}
 
 
 .icon {
     position: absolute;
-    right: 100px;
+    right: 180px;
     top: 120px;
 }
 .icon ul {}
@@ -160,7 +259,7 @@ header {
 }
 .slide img {
     width: 100%;
-    height: 800px;
+    height: 700px;
     border-radius: 0 0 18% 18% ;
 }
 
@@ -184,6 +283,9 @@ nav {
     letter-spacing: 2px;
     margin-left: 50px;
 }
+.gnbL li:hover a {
+    color: #011b29;
+}
 .gnbR {
     display: flex;
     position: absolute;
@@ -195,6 +297,9 @@ nav {
     font-size: 28px;
     letter-spacing: 2px;
     margin-left: 50px;
+}
+.gnbR li:hover a {
+    color: #011b29;
 }
 .logo {
     position: absolute;
@@ -210,37 +315,39 @@ nav {
 }
 
 .sub_menu {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: -400px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 50px;
-    border-radius: 10% 10% 0 0;
+}
+.sub_menu>div {
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    background-color:#6b71a0;
+    background-image: url(../img/icon/bgstar_f.png);
+    background-size: cover;
+    padding: 0 50px;
+    margin-top: 20px;
+    border-radius: 20% 20% 0 0;
+    opacity: 0.9;
+    display: none;
 }
 .sub_menu ul li {
     font-size: 24px;
-    color: #333;
+    color: #fff;
     line-height: 2;
+    cursor: pointer;
+}
+.sub_menu ul li:hover {
+    color: #333;
 }
 .sub_menu ul li:nth-child(1) {
     font-size: 60px;
     font-weight: bold;
-    color: #6b71a0;
-    opacity: 0.5;
+    color: #011b29;
+    opacity: 0.6;
+    margin-bottom: -20px;
 }
-.sub1 {}
-.sub1 ul {}
-.sub1 li
 
-.sub2 {
-    display: none;
-}
-.sub3 {
-    display: none;
-}
-.sub4 {
-    display: none;
-}
 
 /* menu */
 .menu_toggle_btn {
@@ -266,6 +373,7 @@ nav {
     opacity: 0.6;
     padding-top: 25px;
     box-shadow: 2px 2px 3px #333;
+    cursor: pointer;
 }
 .themeL li.on {
     background-color: #011b29;
@@ -317,20 +425,27 @@ nav {
 
 
 /* 축제&전시 */
+.festival>#wrap {
+    width: 100%;
+    padding-left: 20%;
+}
 .festival {
     margin-top: 100px;
     background-color: #011b29;
     padding: 90px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 .fesBox {
     display: flex;
     width: 100%;
+    height: 400px;
 }
 .fes_title {
-    width: 30%;
+    position: relative;
 }
+
 .fes_title h2 {
     color: #fff;
 }
@@ -342,11 +457,19 @@ nav {
 }
 .imgList {
     width: 70%;
+    height: 100%;
     margin-top: 50px;
     z-index: 10;
+    position: relative;
+    overflow: hidden;
 }
 .imgList ul {
     display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.7s;
 }
 .imgList li {
     cursor: pointer;
@@ -354,8 +477,7 @@ nav {
     transition: all 0.7s;
 }
 .imgList li:hover {
-    scale: 1.1;
-    transform: translateY(-20px);
+    filter: blur(3px);
 }
 .imgList img {}
 
@@ -386,17 +508,18 @@ nav {
 }
 /* java */
 .fireworks {}
+
 .fireworks img:nth-child(1) {
     position: absolute;
     top: 0;
     right: 5%;
-    opacity: 0.4;
+    opacity: 0;
 }
 .fireworks img:nth-child(2) {
     position: absolute;
-    left: 30%;
-    top: 50%;
-    opacity: 0.2;
+    left: 40%;
+    top: 60%;
+    opacity: 0;
 }
 
 
@@ -409,6 +532,7 @@ nav {
 }
 .act_title {
     margin-top: 10px;
+    position: relative;
 }
 .act_title h2 {}
 .act_title span {
@@ -481,7 +605,9 @@ nav {
 .box strong {
     color: #fff;
     font-weight: normal;
-    margin: 30px;
+    margin: 0 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: block;
     line-height: 1.6;
     font-family: 'Gowun Dodum', sans-serif;
@@ -505,21 +631,44 @@ nav {
     margin: 10px 50px;
     padding: 10px 0;
     cursor: pointer;
+    transition: all 0.6s;
 }
 .reserveBtn:hover {
-    
+    background-color: #011b29;
+    color: #f5ea61;
+    border: #f5ea61 0.5px solid;
 }
 .actInfo2 {
     display: none;
+    background-color: #011b29;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
 }
 .actInfo3 {
     display: none;
+    background-color: #011b29;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
 }
 .actInfo4 {
     display: none;
+    background-color: #011b29;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
 }
 .sub {
     display: none;
+    background-color: #011b29;
+    border-radius: 15px;
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
 }
 
 /* 공지사항 */
@@ -530,6 +679,7 @@ nav {
     position: relative;
     width: 100%;
     height: 1200px;
+    z-index: 1;
 }
 .star {
     position: absolute;
@@ -552,7 +702,9 @@ nav {
 .bg h2 {
     color: #fff;
 }
-.notice {}
+.notice {
+    position: relative;
+}
 .notice h2 {}
 .notice>.more {
     margin: 20px 0;
@@ -581,7 +733,7 @@ nav {
     position: absolute;
     right: 20px;
 }
-.notice .more:hover {
+.notice.more:hover {
     opacity: 0.5;
 }
 
@@ -612,6 +764,7 @@ nav {
     height: 400px;
 }
 .infoBtn {
+    cursor: pointer;
     background-color: #f5ea61;
     font-family: jua;
     font-size: 18px;
@@ -624,7 +777,8 @@ nav {
     transition: all 0.3s;
 }
 .infoBtn:hover {
-    opacity: 0.6;
+    background-color: #011b29;
+    color: #f5ea61;
 }
 .time {
     margin-top: 100px;
@@ -709,7 +863,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 .sns li {
     padding: 10px;
@@ -735,53 +889,95 @@ footer {
 }
 .tel li:nth-child(4) {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
-
+.call {
+    padding-bottom: 100px;
+}
 .call>h3 {
     font-family: jua;
     font-size: 28px;
     color: #fff;
     font-weight: normal;
 }
+.family {
+    cursor: pointer;
+    background-color: #FFF8DC;
+    color: #011b29;
+    border-radius: 10px;
+    padding: 10px;;
+}
+.family ul {
+    font-size: 20px;
+}
+.family li {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
 footer p {
     color: #ddd;
     font-size: 12px;
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.5;
     padding: 20px 0;
-}
-
-/* Order Setting */
-.main {
-    order: 1;
-}
-.theme {
-    order: 2;
-}
-.festival {
-    order: 3;
-}
-.act_reservation {
-    order: 4;
-}
-.bg {
-    order: 5;
-}
-.guide {
-    order: 6;
-}
-footer {
-    order: 7;
+    letter-spacing: 2px;
 }
 
 
-/* @@@@@@@@@@MediaQuery@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@ MediaQuery @@@@@@@@@@@@@ */
 
 /* ***1280px or Less*** */
 @media(max-width:1280px){}
 
 /* ***1025px-1279px*** */
-@media(min-width:1025px) and (max-width:1279px){}
+@media(min-width:1025px) and (max-width:1279px){
+    .festival>#wrap {
+        width: 100%;
+        padding-left: 0;
+    }
+    .festival {
+        margin-top: 80px;
+        background-color: #011b29;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .fesBox {
+        display: block;
+        width: 100%;
+        height: 500px;
+    }
+    .imgList {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        z-index: 10;
+        position: relative;
+        overflow: hidden;
+    }
+    .imgList ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.7s;
+    }
+    .imgList li {
+        cursor: pointer;
+        transition: all 0.7s;
+        margin: 0 10px;
+    }
+    
+    .imgList li img {
+        width: 180px;
+    }
+}
 
 /* ***768px-1024px*** */
 @media(min-width:768px) and (max-width:1024px){
@@ -794,6 +990,18 @@ footer {
         letter-spacing: 2px;
         font-weight: normal;
     }
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .titleIcon {
+        left: 0;
+        top: -20px;
+    }
+    
+    
+
     
     /* 메인헤더 */
     header {
@@ -809,7 +1017,7 @@ footer {
         right: 100px;
         top: 30px;
     }
-    /* ////보류/// */
+
     .util ul {
         display: flex;
     }
@@ -830,10 +1038,29 @@ footer {
         right: -50px;
         top: 0;
     }
-    
+    .lang {
+        position: absolute;
+        right: 120px;
+        top: 80px;
+        width: 80px;
+        background-color: #eee;
+        padding: 8px;
+        border-radius: 10px;
+        display: none;
+    }
+    .lang ul {
+        display: block;
+    }
+    .lang li {
+        cursor: pointer;
+        font-size: 16px;
+        padding-top: 8px;
+        margin-left: 30px;
+        color: #333;
+    }
 
     .icon {
-        right: 50px;
+        right: 40px;
         top: 150px;
     }
     .icon li {
@@ -860,9 +1087,50 @@ footer {
     }
     
     nav {
+    }
+    .gnbL {
         display: none;
     }
-
+    .gnbR {
+        display: none;
+    }
+    
+    .sub_menu {
+        z-index: 9999;
+        position: fixed;
+        width: 40%;
+        height: auto;
+        right: 0;
+        top: 100px;
+        padding: 0 0;
+        margin: 0 0;
+        background-color: #6b71a0;
+        
+    }
+    .sub_menu>div {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+        margin-bottom: 10px;
+        border-radius: 0;
+        background: none;
+    }
+    .sub_menu ul li {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #fff;
+    }
+    .sub_menu ul li:hover {
+        color: #FFF8DC;
+    }
+    .sub_menu ul li:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+        color: #011b29;
+    }
 
     .logo {
         display: none;
@@ -878,17 +1146,23 @@ footer {
         height: auto;
     }
     
+
+
     .menu_toggle_btn {
+        cursor: pointer;
         display: block;
         position: absolute;
-        right: 60px;
+        right: 65px;
         top: 40px;
         background: url(../img/icon/menu_toggle_btn.png) no-repeat;
         background-size: cover;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         text-indent: -9999px;
+        z-index: 100;
+        
     }
+    
     
 
     /* 테마여행 */
@@ -918,32 +1192,48 @@ footer {
     }
     
     /* 축제&전시 */
+    .festival>#wrap {
+        width: 100%;
+        padding-left: 0;
+    }
     .festival {
         margin-top: 80px;
-        padding: 60px;
-        overflow: hidden;
+        background-color: #011b29;
+        padding: 50px;
         position: relative;
+        overflow: hidden;
+        z-index: 1;
     }
     .fesBox {
-        display: flex;
+        display: block;
         width: 100%;
-    }
-    .fes_title {
-        width: 20%;
-    }
-    .fes_title span {
-        font-size: 12px;
+        height: 500px;
     }
     .imgList {
-        width: 80%;
-        margin-top: 30px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
         z-index: 10;
+        position: relative;
+        overflow: hidden;
     }
-    .imgList li {
-        margin: 0 10px;
+    .imgList ul {
+        display: flex;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
         transition: all 0.7s;
     }
-    .imgList img {
+    .imgList li {
+        cursor: pointer;
+        transition: all 0.7s;
+        margin: 0 10px;
+    }
+    
+    .imgList li img {
         width: 180px;
     }
 
@@ -1093,6 +1383,12 @@ footer {
     .call>h3 {
         font-size: 24px;
     }
+
+    .topBtn {
+        position: fixed;
+        right: 100px;
+        bottom: 50px;
+    }
 }
 
 /* ***661px-767px*** */
@@ -1106,7 +1402,9 @@ footer {
         letter-spacing: 2px;
         font-weight: normal;
     }
-    
+    body {
+        overflow-x: hidden;
+    }
     /* 메인헤더 */
     header {
         width: 100%;
@@ -1121,7 +1419,6 @@ footer {
         right: 100px;
         top: 30px;
     }
-    /* ////보류/// */
     .util ul {
         display: flex;
     }
@@ -1129,7 +1426,7 @@ footer {
         display: none;
     }
     .util li {
-        padding: 18px 100px;
+        margin: 18px 100px;
     }
     .util li i {
         font-size: 20px;
@@ -1142,7 +1439,26 @@ footer {
         right: -50px;
         top: 0;
     }
-    
+    .lang {
+        position: absolute;
+        right: 120px;
+        top: 80px;
+        width: 80px;
+        background-color: #eee;
+        padding: 8px;
+        border-radius: 10px;
+        display: none;
+    }
+    .lang ul {
+        display: block;
+    }
+    .lang li {
+        cursor: pointer;
+        font-size: 16px;
+        padding-top: 8px;
+        margin-left: 30px;
+        color: #333;
+    }
 
     .icon {
         right: 50px;
@@ -1170,11 +1486,54 @@ footer {
         height: 500px;
         border-radius: 15% 15% 25% 18% ;
     }
+    .slide {
+        position: relative;
+    }
     
-    nav {
+    nav {}
+    .gnbL {
         display: none;
     }
-
+    .gnbR {
+        display: none;
+    }
+    
+    .sub_menu {
+        z-index: 9999;
+        position: fixed;
+        width: 40%;
+        height: auto;
+        right: 0;
+        top: 100px;
+        padding: 0 0;
+        margin: 0 0;
+        background-color: #6b71a0;
+        
+    }
+    .sub_menu>div {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+        margin-bottom: 10px;
+        border-radius: 0;
+        background: none;
+    }
+    .sub_menu ul li {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #fff;
+    }
+    .sub_menu ul li:hover {
+        color: #FFF8DC;
+    }
+    .sub_menu ul li:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+        color: #011b29;
+    }
 
     .logo {
         display: none;
@@ -1197,9 +1556,10 @@ footer {
         top: 40px;
         background: url(../img/icon/menu_toggle_btn.png) no-repeat;
         background-size: cover;
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         text-indent: -9999px;
+        z-index: 100;
     }
     
 
@@ -1230,35 +1590,41 @@ footer {
     }
     
     /* 축제&전시 */
+    .festival>#wrap {
+        width: 100%;
+        padding-left: 0;
+    }
     .festival {
         margin-top: 80px;
-        padding: 60px;
-        overflow: hidden;
+        background-color: #011b29;
+        padding: 50px;
         position: relative;
+        overflow: hidden;
+        z-index: 1;
     }
     .fesBox {
-        display: flex;
+        display: block;
         width: 100%;
-    }
-    .fes_title {
-        width: 20%;
-    }
-    .fes_title span {
-        font-size: 12px;
+        height: 500px;
     }
     .imgList {
-        width: 80%;
-        margin-top: 30px;
-        z-index: 10;
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .imgList ul {
+        display: flex;
+        width: 100%;
+        height: auto;
     }
     .imgList li {
         margin: 0 10px;
-        transition: all 0.7s;
     }
-    .imgList img {
-        width: 180px;
+    
+    .imgList li img {
+        width: 160px;
     }
-
     .btn img {
         width: 40px;
     }
@@ -1408,8 +1774,11 @@ footer {
     }
 }
 
-/* ******421px-660px****** */
-@media(min-width:421px) and (max-width:660px){
+
+
+
+/**** 660px or Less ****/
+@media (max-width:660px){
     #wrap {
         width: 100%;
         margin: 0 auto;
@@ -1417,8 +1786,16 @@ footer {
     h2 {
         font-size: 20px;
         margin-left: 10px;
+        z-index: 2;
+    }
+    body {
+        overflow-x: hidden;
     }
     
+    .titleIcon {
+        display: none;
+    }
+
     /* 메인헤더 */
     header {
         width: 100%;
@@ -1437,10 +1814,10 @@ footer {
         display: none;
     }
     .util li {
-        padding: 15px 90px;
+        margin: 15px 70px;
     }
     .util li i {
-        font-size: 14px;
+        font-size: 16px;
         color: #011b29;
     }
     
@@ -1449,7 +1826,25 @@ footer {
         right: -40px;
         top: 0;
     }
-    
+    .lang {
+        position: absolute;
+        right: 100px;
+        top: 70px;
+        width: 80px;
+        padding: 8px;
+        border-radius: 10px;
+        display: none;
+    }
+    .lang ul {
+        display: block;
+    }
+    .lang li {
+        cursor: pointer;
+        font-size: 16px;
+        padding-top: 8px;
+        margin-left: 20px;
+        color: #333;
+    }
 
     .icon {
         display: none;
@@ -1457,12 +1852,53 @@ footer {
 
     .slide img {
         width: 100%;
-        height: 400px;
+        height: 300px;
         border-radius: 15% 15% 0 0 ;
     }
     
-    nav {
+    nav {}
+    .gnbL {
         display: none;
+    }
+    .gnbR {
+        display: none;
+    }
+    
+    .sub_menu {
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 80px;
+        padding: 0 0;
+        margin: 0 0;
+        background-color: #6b71a0;
+    }
+    .sub_menu>div {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+        margin-bottom: 10px;
+        border-radius: 0;
+        background: none;
+        
+    }
+    .sub_menu ul li {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #fff;
+    }
+    .sub_menu ul li:hover {
+        color: #FFF8DC;
+    }
+    .sub_menu ul li:nth-child(1) {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-left: -20px;
+        color: #011b29;
     }
 
 
@@ -1481,15 +1917,17 @@ footer {
     }
     
     .menu_toggle_btn {
+        cursor: pointer;
         display: block;
         position: absolute;
-        right: 65px;
+        right: 50px;
         top: 35px;
         background: url(../img/icon/menu_toggle_btn.png) no-repeat;
         background-size: cover;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         text-indent: -9999px;
+        z-index: 1000;
     }
     
 
@@ -1497,7 +1935,8 @@ footer {
     .theme {
         background-color: #011b29;
         margin: 0;
-        padding-top: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
     .theme h2 {
         color: #fff;
@@ -1516,32 +1955,43 @@ footer {
     }
     
     /* 축제&전시 */
+    .festival>#wrap {
+        width: 100%;
+        padding-left: 0;
+    }
     .festival {
         margin-top: 0;
+        background-color: #011b29;
+        padding: 0;
+        padding-top: 30px;
+        position: relative;
         overflow: hidden;
-    }
-    .fesBox {
-        display: block;
-        width: 100%;
-        margin-left: -70px;
-    }
-    .fes_title {
-        margin-left: 0px;
-        margin-bottom: 60px;
-
+        z-index: 1;
     }
     .fes_title span {
         display: none;
     }
+    .fesBox {
+        display: block;
+        width: 100%;
+        height: 350px;
+    }
     .imgList {
         display: block;
-        margin-top: 2px;
-        z-index: 10;
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+    }
+    .imgList ul {
+        display: flex;
+        width: 100%;
+        height: auto;
     }
     .imgList li {
         margin: 0 10px;
     }
-    .imgList img {
+    
+    .imgList li img {
         width: 130px;
     }
 
@@ -1549,16 +1999,17 @@ footer {
     
     .more img {
         position: absolute;
-        right: 20px;
-        top: 120px;
+        right: 30px;
+        top: 60px;
         width: 40px;
         height: auto;
     }
     .btn {
         position: absolute;
-        right: 0;
-        bottom: 0;
-        margin: 20px 10px;
+        top: 300px;
+        right: 30px;
+        margin: 0 10px;
+        margin-bottom: 30px;
     }
     .btn img {
         width: 40px;
@@ -1578,21 +2029,22 @@ footer {
         display: none;
     }
     .actList {
+        width: 90%;
+        margin: 0 auto;
         margin-top: 40px;
-        width: 100%;
     }
     .actList ul {
         display: flex;
         justify-content: space-between;
     }
     .actList li {
-        font-size: 20px;
+        font-size: 16px;
         opacity: 1;
         background-color: #f5ea61;
-        border-radius: 15%;
-        width: 120px;
+        border-radius: 50%;
+        width: 100px;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 32px;
         margin-top: 0 auto;
     }
     .actList li:hover {
@@ -1604,6 +2056,15 @@ footer {
     .actInfo1 {
         display: none;
     }
+    .actInfo2 {
+        display: none;
+    }
+    .actInfo3 {
+        display: none;
+    }
+    .actInfo4 {
+        display: none;
+    }
 
     
     /* 공지사항 */
@@ -1611,11 +2072,15 @@ footer {
         margin-top: 80px;
         padding: 50px 0;
         width: 100%;
-        height: 600px;
+        height: 550px;
     }
     .star {
         width: 100%;
         height: auto;
+    }
+    .notice {
+        width: 90%;
+        margin: 0 auto;
     }
     .notice .more {
         position: absolute;
@@ -1636,11 +2101,13 @@ footer {
     
     /* 오시는길 */
     .map {
-        width: 100%;
-        height: 250px;
+        width: 90%;
+        margin: 0 auto;
+        height: 200px;
         margin-top: 80px;
         margin-bottom: 150px;
         position: relative;
+        
     }
     .banner {
         display: none;
@@ -1649,352 +2116,34 @@ footer {
         margin-bottom: 30px;
     }
     .mapInfo {
-        height: 250px;
+        height: 200px;
     }
     .infoBtn {
         font-size: 16px;
-        width: 100px;
+        width: 80%;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .time {
         margin-top: 40px;
     }
     .time span {
-        font-size: 16px;
+        font-size: 14px;
     }
     .time ul {
-        margin: 10px auto;
+        width: 90%;
+        margin: 0 auto;
     }
     .time li {}
     .time li a {
-        padding: 8px;
-    }
-    .time i {
-        font-size: 16px;
-    }
-    
-    
-    
-    /* 여행도우미 */
-    .guide {
-        margin-top: 50px;
-    }
-    .guideList {
-        margin: 30px 10px;
-    }
-    .guideList i {
-        font-size: 40px;
-    }
-    .guideList a {
-        font-size: 16px;
-    }
-    
-    
-    /* footer */
-    footer {
-        margin-top: 50px;
-    }
-
-    .info {
-        display: block;
-        margin-left: 30px;
-    }
-    .tel li {
-        font-size: 14px;
-    }
-
-    .call>h3 {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-
-    /* topBtn */
-    .topBtn {
-        right: 20px;
-        width: 80px;
-        height: 80px;
-    }
-    .topBtn i {
-        font-size: 20px;
-    }
-    .topBtn a {
-        font-size: 18px;
-    }
-}
-
-
-/* ******375px-420px****** */
-@media(min-width:375px) and (max-width:420px){
-    #wrap {
-        width: 100%;
-        margin: 0 auto;
-    }
-    h2 {
-        font-size: 18px;
-        margin-left: 10px;
-    }
-    
-    /* 메인헤더 */
-    header {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .slide>img {
-        margin-top: 80px;
-    }
-    .slide .util {
-        position: absolute;
-        right: 80px;
-        top: 25px;
-    }
-    .util input {
-        display: none;
-    }
-    .util li {
-        padding: 15px 60px;
-    }
-    .util li i {
-        font-size: 14px;
-        color: #011b29;
-    }
-    
-    .util li:nth-child(2) {
-        position: absolute;
-        right: -40px;
-        top: 0;
-    }
-    
-
-    .icon {
-        display: none;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 300px;
-        border-radius: 15% 15% 0 0 ;
-    }
-    
-    nav {
-        display: none;
-    }
-
-
-    .logo {
-        display: none;
-    }
-    .sub_logo {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 40px;
-    }
-    .sub_logo img {
-        width: 60px;
-        height: auto;
-    }
-    
-    .menu_toggle_btn {
-        display: block;
-        position: absolute;
-        right: 50px;
-        top: 35px;
-        background: url(../img/icon/menu_toggle_btn.png) no-repeat;
-        background-size: cover;
-        width: 30px;
-        height: 30px;
-        text-indent: -9999px;
-    }
-    
-
-    /* 테마여행 */
-    .theme {
-        background-color: #011b29;
-        margin: 0;
-        padding-top: 50px;
-    }
-    .theme h2 {
-        color: #fff;
-    }
-    .conBox {
-        margin-top: 10px;
-    }
-    .themeL li {
-        display: none;
-    }
-    
-    .themeR {
-        width: 100%;
-        height: auto;
-        border-radius: 0 0 0 0;
-    }
-    
-    /* 축제&전시 */
-    .festival {
-        margin-top: 0;
-        overflow: hidden;
-    }
-    .fesBox {
-        display: block;
-        width: 100%;
-        margin-left: -80px;
-    }
-    .fes_title {
-        margin-left: 0px;
-        margin-bottom: 50px;
-
-    }
-    .fes_title span {
-        display: none;
-    }
-    .imgList {
-        display: block;
-        margin-top: 2px;
-        z-index: 10;
-    }
-    .imgList li {
-        margin: 0 5px;
-    }
-    .imgList img {
-        width: 100px;
-    }
-
-    
-    
-    .more img {
-        position: absolute;
-        right: 20px;
-        top: 130px;
-        width: 35px;
-        height: auto;
-    }
-    .btn {
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
-    }
-    .btn img {
-        width: 30px;
-        height: auto;
-    }
-    .fireworks {
-        display: none;
-    }
-    
-    
-    /* 체험활동 안내예약 */
-    .act_reservation {
-        margin-top: 60px;
-    }
-    .act_title h2 {}
-    .act_title span {
-        display: none;
-    }
-    .actList {
-        margin-top: 30px;
-        width: 100%;
-    }
-    .actList ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .actList li {
-        font-size: 14px;
-        opacity: 1;
-        background-color: #f5ea61;
-        border-radius: 30%;
-        width: 80px;
-        height: 25px;
+        font-size: 11px; 
+        padding: 0 5px;
         text-align: center;
-        padding-top: 20px;
-        margin: 0 auto;
-    }
-    .actList li:hover {
-        opacity: 0.5;
-    }
-    .actList li span {
-        display: none;
-    }
-    .actInfo1 {
-        display: none;
-    }
-
-    
-    /* 공지사항 */
-    .bg {
-        margin-top: 60px;
-        padding: 30px 0;
-        width: 100%;
-        height: 600px;
-    }
-    .star {
-        width: 100%;
-        height: auto;
-    }
-    .notice .more {
-        position: absolute;
-        right: 0;
-        top: -90px;
-    }
-    
-    .notice ul {
-        margin-top: 35px;
-    }
-    .notice li {
-        margin: 10px 0;
-        padding: 5px 10px;
-    }
-    .notice li a {
-        font-size: 12px;
-    }
-    
-    /* 오시는길 */
-    .map {
-        width: 100%;
-        height: 200px;
-        margin-top: 60px;
-        margin-bottom: 120px;
-        position: relative;
-    }
-    .banner {
-        display: none;
-    }
-    .map h2 {
-        margin-bottom: 30px;
-    }
-    .mapInfo {
-        position: absolute;
-        display: flex;
-        top: 260px;
-        width: 100%;
-        height: 100px;
-        background-color: transparent;
-    }
-    .infoBtn {
-        font-size: 16px;
-        width: 100px;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
-    .time {
-        margin: 0 auto;
-        margin-top: 20px;
-    }
-    .time span {
-        font-size: 16px;
-    }
-    .time ul {
-        margin: 10px auto;
-    }
-    .time li {}
-    .time li a {
-        padding: 10px;
-        margin:0 10px;
     }
     .time i {
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: 8px;
+        padding: 5px;
     }
     
     
@@ -2024,25 +2173,32 @@ footer {
         margin-left: 30px;
     }
     .tel li {
-        font-size: 12px;
+        font-size: 14px;
     }
 
+    .call {
+        display: flex;
+    }
     .call>h3 {
-        font-size: 20px;
+        font-size: 24px;
         margin-top: 20px;
+    }
+    .family {
+        margin-left: 50px;
+        margin-top: 10px;
     }
 
     /* topBtn */
     .topBtn {
-        right: 10px;
-        width: 60px;
-        height: 60px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
     }
     .topBtn i {
-        font-size: 0px;
+        font-size: 20px;
     }
     .topBtn a {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
