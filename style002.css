@@ -26,6 +26,11 @@ header {
     height: 120px;
     align-items: center;
 }
+header.on {
+    position: fixed;
+    top: 0;
+}
+
 nav {
     width: 70%;
 }
@@ -92,4 +97,14 @@ article:nth-child(2)>div {
 }
 article:nth-child(2)>div:hover {
     box-shadow: 1px 1px 2px #000;
+}
+
+
+.txt {
+    position: fixed;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: 0;
+    top: 30%;
+    padding: 10px;
 }

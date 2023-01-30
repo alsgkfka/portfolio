@@ -97,6 +97,8 @@ $(document).ready(function(){
 
 
     // 체험활동 안내&예약
+    $(window).resize(function(){})
+
     let ww = $(window).width()
     
     if(ww >= 660){
@@ -119,9 +121,10 @@ $(document).ready(function(){
         $('.actInfo2').css({display : 'none'})
         $('.actInfo3').css({display : 'none'})
         $('.actInfo4').css({display : 'none'})
-        ('.actList').css({display : 'block'})
     })
     }
+    
+
 
     // family site btn
     $('.family span').click(function(){
