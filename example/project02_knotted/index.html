@@ -16,9 +16,14 @@
     <script src="https://kit.fontawesome.com/380f7508ab.js" crossorigin="anonymous"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- jquery CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
     <!-- js -->
     <script src="js.js"></script>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
 </head>
 <body>
 
@@ -36,10 +41,11 @@
             <div class="p9"><img src="img/dnIllust_cup1.png" alt=""></div>
             <div class="p10"><img src="img/dnIllust_cup2.png" alt=""></div>
             <div class="p11"><img src="img/dnIllust_butter.png" alt=""></div>
-            <div class="p13"><img src="img/dnIllust_berry.png" alt=""></div>
+            <div class="p12"><img src="img/dnIllust_berry.png" alt=""></div>
+            <div class="p13"><img src="img/dnIllust_cup1.png" alt=""></div>
             <div class="p14"><img src="img/donutBox.png" alt=""></div>
-            <div class="p15"><img src="img/dnIllust_berry.png" alt=""></div>
-            <div class="p16"><img src="img/dnIllust_cup1.png" alt=""></div>
+            <div class="p15"><img src="img/dnIllust_butter.png" alt=""></div>
+            <div class="p16"><img src="img/dnIllust_berry.png" alt=""></div>
         </div>
     </div>
 
@@ -55,9 +61,17 @@
                 <p class="menu_toggle_btn"></p>
                 <div class="menu">
                     <ul class="util">
-                        <li>LOG IN</li>
-                        <li>CART</li>
-                        <li>1 : 1</li>
+                        <li>
+                            <img src="img/smile.4a872d25.png" alt="">
+                            <span>LOG IN</span>
+                        </li>
+                        <li>
+                            <img src="img/cart.png" alt="">
+                            <span>CART</span>
+                        </li>
+                        <li>
+                            <img src="img/login.png" alt="">
+                            <span>1 : 1</spa></li>
                     </ul>
 
                     <ul class="menuList">
@@ -88,11 +102,24 @@
             <h2 class="aboutTitle">
                 <img src="img/ABOUT.png" alt="">
             </h2>
-            <article>
-                <p>프리미엄 케이크, 도넛, 디저트 카페</p>
-                <span>노티드는 다양한 베이커리와 케이크, 도넛을 즐길 수 있는 디저트 카페로 합리적인 가격에 프리미엄한 맛을 제공하고 
-                    노티드의 시그니처인 크림이 가득한 도넛과 귀여운 패키징으로 
-                    새로운 트렌드를 만들어 가며 모든 사람들에게 행복을 선사하고자 노력하고 있습니다.</span>
+            <article class="knotted">
+                <img src="img/aboutnottedMain.jpg" alt="">
+
+                <div class="intro">
+                    <p>프리미엄 케이크, 도넛, 디저트 카페</p>
+                    <div>
+                        노티드는 다양한 베이커리와 케이크, 도넛을 즐길 수 있는 디저트 카페로 <br/>
+                        노티드의 가장 대표적인 메뉴 '우유생크림도넛'은 한입 베어 물면 입안에 가득 퍼지는 우유크림이 
+                        기분 좋은 달콤함을 선사합니다.
+                        이외에도 스테디셀러인 클래식바닐라도넛, 베리머치도넛, 얼그레이도넛 등 다양한 도넛들과 함께 10여종의 귀여운 홀케이크를 만날 수 있습니다.
+                        <br/> 노티드는 보기만 해도 기분이 좋아지는 노티드의 상징 '스마일리'와 사랑스러운 '슈가베어' 이미지의 굿즈들을 제작하여 매 시즌 선보이고 있으며<br/>
+                        노티드를 사랑해주시는 모든 분들에게
+                        도넛만큼 달콤한 재미와 행복을 선물하고자 노력하고 있습니다.
+                    </div>
+                    <img src="img/logo_bnw.png" alt="" class="bLogo">
+                    <img src="img/smile.4a872d25.png" alt="" class="Ysmile">
+                </div>
+            
             </article>
         </section>
 
@@ -104,7 +131,7 @@
             <h2 class="menuTitle">
                 <img src="img/MENU.png" alt="">
             </h2>
-            <article>
+            <article class="dnlist">
                 <ul class="dn">
                     <li><img src="img/dn1.png" alt=""></li>
                     <li><img src="img/dn2.png" alt=""></li>
@@ -118,7 +145,7 @@
                     <li><img src="img/dn11.png" alt=""></li>
                 </ul>
             </article>
-            <article>
+            <article class="cakelist">
                 <ul class="cake">
                     <li><img src="img/cake1.png" alt=""></li>
                     <li><img src="img/cake4.png" alt=""></li>
@@ -211,6 +238,10 @@
                             </div>
                         </a></li>
                     </ul>
+                    <div class="btn">
+                        <p class="left"><i class="fa-solid fa-angle-left"></i></p>
+                        <p class="right"><i class="fa-solid fa-angle-right"></i></p>
+                    </div>
                 </div>
 
                 <p class="moreBtn">MORE</p>

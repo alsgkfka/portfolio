@@ -7,6 +7,7 @@
     #FFEB8F - yellow */
 
 /* font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 * {
     margin: 0;
@@ -14,6 +15,7 @@
 }
 body {
     font-family: 'Pretendard';
+    font-family: 'Nanum Gothic', sans-serif;
 }
 img {
     border: none;
@@ -34,7 +36,6 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     z-index: -1;
 }
 #wrap {
@@ -59,6 +60,7 @@ h2 {
     z-index: 100;
 }
 
+
 /* header */
 .headerMenu {
     position: fixed;
@@ -77,6 +79,8 @@ h2 {
     width: 30px;
     height: 30px;
     margin-left: 30px;
+    z-index: 20;
+    cursor: pointer;
 }
 .menu {
     position: absolute;
@@ -90,21 +94,28 @@ h2 {
 }
 .util {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
     margin: 10px;
+    cursor: pointer;
 }
 .util li {
+    margin-right: 30px;
+}
+.util li span {
     display: block;
-    background-color: #ddd;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: auto;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    opacity: 0.8;
-    margin-right: 10px;
+    font-size: 12px;
+}
+.util li img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.util li:hover {
+    opacity: 0.7;
 }
 
 
@@ -116,13 +127,15 @@ h2 {
     font-size: 24px;
     font-weight: bold;
 }
-.logo {
-    
+.menuList li:hover {
+    text-decoration: underline;
 }
+
+
+.logo {}
 .logo img {
     width: 180px;
     height: auto;
-    
 }
 .my {
     text-align: center;
@@ -140,6 +153,176 @@ h2 {
 }
 
 
+
+/* Background */
+.Bg {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.dnani {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #FFFDE7;
+    overflow: hidden;
+    pointer-events: none;
+}
+.p1 img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p2 img {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 6s linear infinite;
+}
+.p3 img {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p4 img {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    animation: ani2 6s linear infinite;
+}
+.p5 img {
+    position: absolute;
+    top: 350px;
+    left: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p6 img {
+    position: absolute;
+    top: 550px;
+    left: 150px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 6s linear infinite;
+}
+.p7 img {
+    position: absolute;
+    top: 750px;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    animation: ani1 5s linear infinite;
+}
+.p8 img {
+    position: absolute;
+    top: 750px;
+    left: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 5s linear infinite;
+}
+
+.p9 img {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 300px;
+    height: 250px;
+    animation: ani2 6s linear infinite;
+}
+.p10 img {
+    position: absolute;
+    top: 0;
+    right: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p11 img {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 5s linear infinite;
+}
+.p12 img {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    width: 300px;
+    height: 250px;
+    animation: ani2 8s linear infinite;
+}
+.p13 img {
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p14 img {
+    position: absolute;
+    top: 550px;
+    right: 150px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 6s linear infinite;
+}
+.p15 img {
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    width: 300px;
+    height: 250px;
+    animation: ani 5s linear infinite;
+}
+.p16 img {
+    position: absolute;
+    top: 750px;
+    right: 300px;
+    width: 300px;
+    height: 250px;
+    animation: ani2 5s linear infinite;
+}
+@keyframes ani {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes ani2 {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+} 
 /* main */
 #main {
     background: url(img/mainCloud_bg.png) no-repeat center center;
@@ -161,126 +344,82 @@ h2 {
     float: right;
     margin-top: -500px;
     padding-right: 70px;
+    opacity: 0.9;
+    cursor: pointer;
 }
 .reservation:hover {
-    
+    opacity: 1;
+    filter: drop-shadow(3px 3px 5px gray);
 }
-/* Background */
-.Bg {
-    position: relative;
-    overflow: hidden;
+/* about */
+#about {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.dnani {
+.knotted {}
+.knotted>img {
     display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color:  #FFFDE7;
-    overflow: hidden;
-    pointer-events: none;
 }
-.p1 img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 250px;
-    animation: ani 5s linear infinite;
+.intro {
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
-.p2 img {
+.intro .bLogo {
     position: absolute;
-    top: 0;
-    left: 300px;
-    width: 300px;
-    height: 250px;
-    animation: ani2 5s linear infinite;
+    right: 200px;
+    top: -30px;
+    width: 200px;
+    height: auto;
+    opacity: 0.1;
+    z-index: -1;
 }
-.p3 img {
+.Ysmile {
     position: absolute;
-    top: 200px;
-    left: 150px;
-    width: 300px;
-    height: 250px;
-    animation: ani 5s linear infinite;
+    right: 50px;
+    bottom: -100px;
+    width: 280px;
+    height: auto;
+    opacity: 0.4;
+    z-index: -1;
 }
-.p4 img {
-    position: absolute;
-    top: 400px;
-    left: 0;
-    width: 300px;
-    height: 250px;
-    animation: ani2 5s linear infinite;
+.intro p {
+    font-size: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
 }
-.p5 img {
-    position: absolute;
-    top: 400px;
-    left: 300px;
-    width: 300px;
-    height: 250px;
-    animation: ani 5s linear infinite;
-}
-.p6 img {
-    position: absolute;
-    top: 600px;
-    left: 150px;
-    width: 300px;
-    height: 250px;
-    animation: ani2 5s linear infinite;
-}
-.p7 img {
-    position: absolute;
-    top: 800px;
-    left: 0;
-    width: 300px;
-    height: 250px;
-    animation: ani1 5s linear infinite;
-}
-.p6 img {
-    position: absolute;
-    top: 800px;
-    left: 300px;
-    width: 300px;
-    height: 250px;
-    animation: ani2 5s linear infinite;
+.intro>div {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-left: 60px;
+    line-height: 2;
+    font-size: 14px;
 }
 
-/* @keyframes ani {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-@keyframes ani2 {
-    0% {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(10px);
-    }
-} */
 /* menu */
 #menu {}
+.dnlist {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
 .dn {
+    position: absolute;
+    left: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: start;
+    animation: dn 60s linear infinite;
 }
 .dn li {
     background-color: #F7C8DA;
     border-radius: 50%;
-    width: 160px;
+    width: 150px;
     height: 150px;
     margin-left: 20px;
 }
@@ -291,19 +430,38 @@ h2 {
 .dn li:hover {
     background-color: #FFEB8F;
 }
-
+@keyframes dn {
+    0% {
+        left: 0;
+    }
+    50% {
+        
+        left: -900px;
+    }
+    100% {
+        left: 0;
+    }
+}
+.cakelist {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
 .cake {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: end;
     margin-top: 50px;
     background-color: #F7C8DA;
     padding: 10px 0;
+    right: 0;
+    animation: cake 60s linear infinite;
 }
 .cake li {
     background-color: #fff;
     border-radius: 50%;
-    width: 160px;
+    width: 150px;
     height: 150px;
     margin-left: 20px;
     transition: all 0.8s;
@@ -312,10 +470,21 @@ h2 {
     width: 140px;
     height: 140px;
 }
-
 .cake li:hover {
     background-color: transparent;
 }
+@keyframes cake {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: -590px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
 .moreBtn {
     display: block;
     cursor: pointer;
@@ -325,9 +494,10 @@ h2 {
     width: 100px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 30px;
-    padding-top: 5px;
+    margin-top: 35px;
+    padding-top: 10px;
     transition: all 0.6s;
+    font-size: 14px;
 }
 .moreBtn:hover {
     background-color: #A0CAE0;
@@ -337,10 +507,14 @@ h2 {
 #goods {}
 .banner {
     width: 100%;
-    height: auto;
+    height: 200px;
+    position: relative;
 }
 .banner ul {
     display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 .banner li {}
 .banner img {
@@ -355,12 +529,19 @@ h2 {
     text-align: center;
 }
 
-.product {}
+.product {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    
+}
 .product ul {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    transition: all 0.8s;
 }
 .product li {}
 .product a {
@@ -369,6 +550,9 @@ h2 {
     margin: 20px 10px;
     text-align: center;
     padding: 20px 0;
+}
+.product li:hover a{
+    filter: drop-shadow(3px 3px 5px gray);
 }
 .goodsImg {
     width: 200px;
@@ -413,6 +597,31 @@ h2 {
 }
 .bestItem>.moreBtn:hover {
     background-color: #F7C8DA ;
+}
+.btn {
+    display: block;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+.left {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    font-size: 40px;
+    color: #fff;
+    filter: drop-shadow(1px 1px 2px #ccc);
+}
+.right {
+    position: absolute;
+    font-size: 40px;
+    right: 10px;
+    top: 150px;
+    color: #fff;
+    filter: drop-shadow(1px 1px 2px #ccc);
+}
+.btn i:hover {
+    filter: drop-shadow(3px 3px 5px #333);
 }
 /* store */
 #store {
@@ -505,7 +714,7 @@ h2 {
     display: block;
     background-color: #A0CAE0;
     width: 100px;
-    padding: 5px 10px;
+    padding: 10px 8px;
     border-radius: 10px;
     color: #fff;
     font-size: 14px;
@@ -628,3 +837,8 @@ footer p {
     font-size: 12px;
     margin-top: 10px;
 }
+
+
+
+/* ****Media Query**** */
+@media(min-width:375px) and (max-width:768px){}
