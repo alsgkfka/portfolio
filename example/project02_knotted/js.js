@@ -29,9 +29,21 @@ $(document).ready(function(){
 
     // banner slide
 
-    function timer(){
-        $('.banner')
-    }
-    let slide = setInterval(timer,2500);
+    
+    let b = 0;
+    setInterval(function(){
+
+        if(b<3)
+        b++;
+        if(b==3)
+        b=0;
+
+        let wd = $('.banner li').width()
+
+        $('.banner ul').css({'left' : -wd*b})
+
+    },3500)
+
+
 
 })
