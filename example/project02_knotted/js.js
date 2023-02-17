@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         let wd = $('.banner li').width()
 
-        $('.banner ul').css({'left' : -wd*b})
+        $('.banner ul').css({ left : -wd*b })
 
     },3500)
 
