@@ -157,8 +157,7 @@ nav li.on span{
 .inner {
     display: flex;
     width: 100%;
-    height: 980px;/* 임시 */
-    margin-top: 30px;
+    height: 950px;/* 임시 */
 }
 .pageL {
     position: relative;
@@ -166,13 +165,13 @@ nav li.on span{
     width: 49.5%;
     height: auto;
     background-color: #F7A7BB;
-    clip-path: polygon(2% 7%, 100% 1%, 100% 99%, 3% 99%);
+    clip-path: polygon(2% 3%, 100% 1%, 100% 99%, 3% 99%);
 }
 .bTxt {
     position: absolute;
     left: 35%;
     top: 5%;
-    width: 350px;
+    width: 38%;
     height: auto;
     z-index: 10;
 }
@@ -181,7 +180,7 @@ nav li.on span{
     left: 7%;
     bottom: 3%;
     transform: rotate(-10deg);
-    width: 280px;
+    width: 26%;
     height: auto;
     z-index: 3;
     filter: drop-shadow(3px 3px 5px black);
@@ -191,7 +190,7 @@ nav li.on span{
     left: 35%;
     top: 36%;
     transform: rotate(0);
-    width: 280px;
+    width: 27%;
     height: auto;
     z-index: 3;
     filter: drop-shadow(3px 3px 5px black);
@@ -199,9 +198,9 @@ nav li.on span{
 .b3 {
     position: absolute;
     left: 5%;
-    top: 30%;
+    top: 33%;
     transform: rotate(5deg);
-    width: 340px;
+    width: 30%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
     z-index: 2;
@@ -211,25 +210,25 @@ nav li.on span{
     right: 3%;
     top: 3%;
     transform: rotate(10deg);
-    width: 180px;
+    width: 20%;
     height: auto;
     filter: drop-shadow(2px 2px 5px black);
 }
 .b5 {
     position: absolute;
-    right: 40%;
+    right: 42%;
     bottom: 3%;
     transform: rotate(3deg);
-    width: 180px;
+    width: 19%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
 .b6 {
     position: absolute;
-    right: 2%;
+    right: 4%;
     top: 40%;
     transform: rotate(5deg);
-    width: 320px;
+    width: 32%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -238,7 +237,7 @@ nav li.on span{
     right: 2%;
     bottom: 18%;
     transform: rotate(-8deg);
-    width: 160px;
+    width: 20%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -247,7 +246,7 @@ nav li.on span{
     top: 3%;
     left: 12%;
     transform: rotate(-10deg);
-    width: 160px;
+    width: 18%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -256,7 +255,7 @@ nav li.on span{
     right: 11%;
     bottom: -4%;
     transform: rotate(-95deg);
-    width: 220px;
+    width: 24%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -278,10 +277,28 @@ nav li.on span{
     top: 5%;
     left: 8%;
 }
+.pageR li:nth-child(1) {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.t1>span {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    background-color: #F7A7BB;
+    display: inline-block;
+    width: 100%;
+    height: 26%;
+    z-index: -1;
+    opacity: 0.6;
+    transform: skew(-10deg);
+}
+
 .t2 {
     position: absolute;
     width: 48%;
-    top: 13%;
+    top: 10%;
     left: 8%;
     line-height: 1.8;
     font-family: 'Nanum Gothic Coding', monospace;
@@ -311,8 +328,9 @@ nav li.on span{
     position: absolute;
     right: 5%;
     top: 5%;
-    width: 340px;
+    width: 36%;
     height: auto;
+    filter: drop-shadow(3px 3px 5px black);
 }
 .p2 {
     position: absolute;
@@ -322,35 +340,39 @@ nav li.on span{
 }
 .p3 {
     position: absolute;
-    left: 8%;
+    left: 6%;
     top: 30%;
-    width: 380px;
+    width: 40%;
     height: auto;
+    filter: drop-shadow(3px 3px 5px gray);
 }
 .p4 {
     position: absolute;
     right: 10%;
     bottom: 0;
-    width: 250px;
+    width: 26%;
+    height: auto;
     transform: rotate(10deg);
+    filter: drop-shadow(3px 3px 5px black);
 }
 .p5 {
     position: absolute;
     right: 3%;
     bottom: 0;
-    width: 150px;
+    width: 16%;
+    height: auto;
 }
 .p6 {
     position: absolute;
     right: 35%;
     bottom: 27%;
-    width: 250px;
+    width: 24%;
 }
 .p7 {
     position: absolute;
     right: 30%;
     bottom: 0;
-    width: 180px;
+    width: 19%;
 }
 .mid {
     width: 16px;
@@ -362,14 +384,226 @@ nav li.on span{
 
 
 /* Brand Settings */
-#brand {
-    background-color: #0d0d0d;
+#brand {}
+.brandList {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
 }
-.trail {}
-.trail>article {
-    width: 600px;
+.brandList ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.brandList li {
+    display: block;
+    width: 350px;
+    height: 500px;
+    margin-top: 240px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.brandList li:nth-child(1) {
+    background: url(img/hera_thumb.jpg) center center no-repeat;
+    background-size: cover;
+}
+.brandList li:nth-child(2) {
+    background: url(img/gentle_thumb.jpg) center right no-repeat;
+    background-size: cover;
+}
+.brandList li:nth-child(3) {
+    background: url(img/chanel_thumb.jpg) center center no-repeat;
+    background-size: cover;
+}
+.brandList li:nth-child(4) {
+    background: url(img/calvin_thumb.jpg) center center no-repeat;
+    background-size: cover;
+}
+.brandList li:nth-child(5) {
+    background: url(img/tabm_thumb.jpg) center center no-repeat;
+    background-size: cover;
+}
+.brandList li:hover {
+    opacity: 1;
+}
+
+/* photo Settings */
+#photo {
+    background-color: #000;
+    color: #ddd;
+    height: auto;
+    font-size: 18px;
+}
+.photoList {
+    display: block;
+    padding-top: 90px;
+}
+.photoList>ul {
+    display: flex;
+    width: 40%;
+    padding: 20px 40px;
+}
+.photoList li {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-right: 30px;
+    width: 100%;
+}
+.photoList span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1%;
+    height: 100%;
+    background-color:#F7A7BB;
+    transform: skew(0deg);
+    z-index: -1;
+    opacity: 0.4;
+    margin-left: -8px;
+    transition: all 0.6s;
+}
+
+.photoList li:hover span{
+    width: 85%;
+    transform: skew(5deg);
+    opacity: 0.7;
+}
+
+
+
+
+#chanel {
+    display: block;
+    width: 70%;
+    height: 1500px;
+    margin: 0 auto;
+    background: url(img/chanelBg.jpg) center center no-repeat;
+    background-size: cover;
+    display: none;
+}
+#chanel>div {
+    position: relative;
+    width: 100%;
+}
+.ring {
+    position: absolute;
+    right: 6%;
+    top: 2%;
+}
+.orper {
+    position: absolute;
+    right: 7%;
+    bottom: 14%;
+}
+.pinkper {
+    position: absolute;
+    width: 30%;
+    left: 2%;
+    bottom: 8%;
+}
+
+
+#calvin {
+    display: block;
+    width: 100%;
     height: 800px;
-    background-color: #eee;
+    display: none;
 }
-.overlay {}
-.btn {}
+.calTrail {}
+.calTrail ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calTrail li {
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+}
+.calTrail li:nth-child(3) {
+    transform:rotate(-10deg);
+}
+.calTrail li:nth-child(6) {
+    transform:rotate(10deg);
+}
+
+
+#gentle {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+.fir {}
+.fir img {
+    width: 100%;
+    height: auto;
+}
+.sec {}
+.sec img:nth-child(1) {
+    display: block;
+    width: 40%;
+    height: auto;
+    float: left;
+}
+.sec img:nth-child(2) {
+    display: block;
+    width: 60%;
+    height: auto;
+    float: left;
+}
+.thd {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.thd ul {}
+.thd img:nth-child(1) {
+    display: block;
+    width: 28%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.thd img:nth-child(2) {
+    display: block;
+    width: 44%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+.thd img:nth-child(3) {
+    display: block;
+    width: 28%;
+    height: auto;
+    float: left;
+    clear: both;
+}
+
+.upBtn {}
+.upBtn i {
+    display: block;
+    color: #eee;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    animation: 3s up linear infinite;
+}
+@keyframes up {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* music Settings */
+#music {
+    background-color: #000;
+}
