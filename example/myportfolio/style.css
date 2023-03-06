@@ -113,7 +113,7 @@ body {
 .rabbit {}
 .mainrab {
     position: absolute;
-    background: url(img/mainani.gif) center no-repeat;
+    background: url(../myportfolio/img/mainani.gif) center no-repeat;
     background-size: contain;
     width: 550px;
     height: 350px;
@@ -125,7 +125,7 @@ body {
 }
 .rab1 {
     position: absolute;
-    background: url(img/grayR.png) center no-repeat;
+    background: url(../myportfolio/img/grayR.png) center no-repeat;
     background-size: contain;
     width: 550px;
     height: 350px;
@@ -137,7 +137,7 @@ body {
 }
 .rab2 {
     position: absolute;
-    background: url(img/purpleR.png) center no-repeat;
+    background: url(../myportfolio/img/purpleR.png) center no-repeat;
     background-size: contain;
     width: 550px;
     height: 350px;
@@ -149,7 +149,7 @@ body {
 }
 .rab3 {
     position: absolute;
-    background: url(img/yellowR.png) center no-repeat;
+    background: url(../myportfolio/img/yellowR.png) center no-repeat;
     background-size: contain;
     width: 550px;
     height: 350px;
@@ -161,7 +161,7 @@ body {
 }
 .rab4 {
     position: absolute;
-    background: url(img/pinkR.png) center no-repeat;
+    background: url(../myportfolio/img/pinkR.png) center no-repeat;
     background-size: contain;
     width: 550px;
     height: 350px;
