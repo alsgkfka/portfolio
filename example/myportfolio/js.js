@@ -50,6 +50,12 @@ $(document).ready(function(){
         $('#main').css({'z-index' : '-1'})
         $('#profile').css({opacity : '1'})
         $('#profile').css({'z-index' : '10'})
+        $('.gage li').eq(0).stop().animate({height : '180px'} , 2600)
+        $('.gage li').eq(1).stop().animate({height : '200px'} , 2600)
+        $('.gage li').eq(2).stop().animate({height : '190px'} , 2600)
+        $('.gage li').eq(3).stop().animate({height : '160px'} , 2600)
+        $('.gage li').eq(4).stop().animate({height : '140px'} , 2600)
+        $('.gage li').eq(5).stop().animate({height : '180px'} , 2600)
     })
 
     $('.btn2').click(function(){
@@ -92,5 +98,7 @@ $(document).ready(function(){
     $('.exit').click(function(){
         $('.popup').css({display  : 'none'})
     })
+
+    
 
 })
