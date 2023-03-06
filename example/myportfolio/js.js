@@ -1,5 +1,12 @@
 $(document).ready(function(){
-    
+
+        new TypeIt("#hello",
+        {
+            strings: "안녕하세요 ! 민하람의 포트폴리오입니다.",
+            speed: 80,
+            waitUntilVisible: true,
+        }).go();
+
 
     $('.btn1').mouseenter(function(){
         $('.mainrab').css({opacity : '0'})
@@ -78,7 +85,6 @@ $(document).ready(function(){
         $('#jennie').css({opacity : '0'})
         $('#jennie').css({'z-index' : '-1'})
     })
-
 
     $('.con').click(function(){
         $('.popup').css({display  : 'block'} , 600)

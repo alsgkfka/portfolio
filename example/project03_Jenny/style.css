@@ -25,10 +25,19 @@ a {
     text-decoration: none;
     color: #000;
 }
+body {
+    overflow-x: hidden;
+}
 /* 임시 */
 section {
     width: 100%;
     height: 980px;
+}
+h1 {
+    position: fixed;
+    z-index: 100;
+    color: tomato;
+    font-size: 40px;
 }
 /* Main Setting */
 #main {}
@@ -349,6 +358,9 @@ nav li.on span{
     height: auto;
     filter: drop-shadow(3px 3px 5px gray);
 }
+.p3:hover {
+    transform: rotate(10deg);
+}
 .p4 {
     position: absolute;
     right: 10%;
@@ -376,6 +388,10 @@ nav li.on span{
     right: 30%;
     bottom: 0;
     width: 19%;
+    transition: all 1.2s;
+}
+.p7:hover {
+    transform: rotateY(180deg);
 }
 .mid {
     width: 16px;
@@ -405,8 +421,8 @@ nav li.on span{
     width: 350px;
     height: 500px;
     margin-top: 240px;
-    opacity: 0.5;
-    transition: all 0.5s;
+    opacity: 0;
+    transition: all 0.3s;
 }
 .brandList li:nth-child(1) {
     background: url(img/hera_thumb.jpg) center center no-repeat;
@@ -429,7 +445,7 @@ nav li.on span{
     background-size: cover;
 }
 .brandList li:hover {
-    opacity: 1;
+    scale: 1.1;
 }
 
 /* photo Settings */
@@ -485,7 +501,7 @@ nav li.on span{
 #chanel {
     display: block;
     width: 70%;
-    height: 1500px;
+    height: 1700px;
     margin: 0 auto;
     background: url(img/chanelBg.jpg) center center no-repeat;
     background-size: cover;
@@ -494,22 +510,23 @@ nav li.on span{
 #chanel>div {
     position: relative;
     width: 100%;
+    height: 1700px;
 }
 .ring {
     position: absolute;
     right: 6%;
-    top: 2%;
+    top: 4%;
 }
 .orper {
     position: absolute;
     right: 7%;
-    bottom: 14%;
+    bottom: 18%;
 }
 .pinkper {
     position: absolute;
     width: 30%;
     left: 2%;
-    bottom: 8%;
+    bottom: 16%;
 }
 
 
@@ -541,52 +558,65 @@ nav li.on span{
 #gentle {
     display: block;
     width: 100%;
+    height: 2430px;
     background-color: #fff;
+    position: relative;
 }
-.fir {}
+.fir {
+    background-color: #000;
+}
 .fir img {
     width: 100%;
     height: auto;
+    opacity: 0;
 }
-.sec {}
+.sec {
+    width: 100%;
+    opacity: 0;
+}
 .sec img:nth-child(1) {
+    position: absolute;
+    left: -30%;
     display: block;
-    width: 40%;
+    width: 700px;
     height: auto;
-    float: left;
 }
 .sec img:nth-child(2) {
+    position: absolute;
+    right: -40%;
     display: block;
-    width: 60%;
+    width: 900px;
     height: auto;
     float: left;
 }
 .thd {
     width: 100%;
-    height: auto;
-    display: flex;
+    height: 519px;
+    opacity: 0;
 }
 .thd ul {}
 .thd img:nth-child(1) {
-    display: block;
-    width: 28%;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 23%;
     height: auto;
-    float: left;
-    clear: both;
 }
 .thd img:nth-child(2) {
-    display: block;
-    width: 44%;
-    height: auto;
-    float: left;
-    clear: both;
+    position: absolute;
+    left: 23%;
+    bottom: 0;
+    width: 54%;
+    height: 570px;
+    z-index: 10;
+
 }
 .thd img:nth-child(3) {
-    display: block;
-    width: 28%;
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    width: 23%;
     height: auto;
-    float: left;
-    clear: both;
 }
 
 .upBtn {}
@@ -621,7 +651,7 @@ nav li.on span{
 }
 .songinfo {
     position: relative;
-    width: 30%;
+    width: 20%;
     height: 100%;
 }
 .album {}
@@ -654,14 +684,14 @@ nav li.on span{
 }
 .mv {
     display: block;
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 .mv iframe {
     display: block;
     margin-top: 8%;
     margin-left: 5%;
-    width:80%;
+    width:90%;
     height: 80%;
 }
 
@@ -1576,7 +1606,7 @@ nav li.on span{
             margin: 0 auto;
             background: url(img/chanelBg.jpg) center center no-repeat;
             background-size: contain;
-            display: ;
+            display: none;
         }
         #chanel>div {
             position: relative;
