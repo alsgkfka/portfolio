@@ -368,12 +368,17 @@ body {
 .view div {
     cursor: pointer;
     background-color: #000;
-    color: #eee;
     margin-left: 50px;
     padding: 20px 40px;
     border-radius: 8px;
     font-size: 18px;
     letter-spacing: 1px;
+    color: #eee;
+}
+.view a {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #eee;
 }
 .view div:hover {
     background-color: #d9d9d9;
