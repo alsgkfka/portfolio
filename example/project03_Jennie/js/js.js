@@ -107,5 +107,15 @@ $(document).ready(function(){
         }
     })
 
+    $('.next').click(function(){
+
+        if(aa<4)
+        aa++;
+
+        let wd = $('.calTrail li').width()
+        $('.calTrail ul').css({'left':(-wd+40)*aa});
+
+    })
+
     
 })
