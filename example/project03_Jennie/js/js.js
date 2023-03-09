@@ -107,13 +107,22 @@ $(document).ready(function(){
         }
     })
 
+    let a = 0;
     $('.next').click(function(){
 
-        if(aa<4)
-        aa++;
+        
+        if(a<2)
+        a++;
 
         let wd = $('.calTrail li').width()
-        $('.calTrail ul').css({'left':(-wd+40)*aa});
+        $('.calTrail ul').css({'left':(-wd)*a});
+
+    })
+
+    $('.prev').click(function(){
+
+        
+        $('.calTrail ul').css({'left': 0 });
 
     })
 
