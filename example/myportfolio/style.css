@@ -619,3 +619,122 @@ body {
     letter-spacing: 1.5px;
     margin-bottom: 10px;
 }
+
+/* --------------- Jquery --------------- */
+/* *****1280px***** */
+@media (max-width:1280px){
+    .btn1 {
+        top: -10%;
+        left: -6%;
+    }
+    .btn2 {
+        bottom: -10%;
+        left: -6%;
+    }
+    .btn3 {
+        top: -10%;
+        right: -6%;
+    }
+    .btn4 {
+        bottom: -10%;
+        right: -6%;
+    }
+
+    /* project */
+    .bar ul {
+        width: 40%;
+    }
+    .bar li {
+        font-size: 18px;
+    }
+    .bar span {
+        height: 40%;
+        margin-top: 8px;
+    }
+
+    .home img {
+        width: 40px;
+        height: 40px;
+        margin-top: -35px;
+    }
+    .view {
+        margin-top: 12%;
+    }
+    .exit {
+        right: -25%;
+    }
+    .link {
+        right: -18%;
+    }
+    /* profile */
+    .iamL {
+        margin: 40px 10px;
+    }
+    .iamL img {
+        width: 500px;
+        height: auto;
+    }
+    .contact {
+        margin-top: 30px;
+        margin-left: 90px;
+    }
+
+    .iamR {
+        margin: 40px 10px;
+    }
+    .dream img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .power {
+        width: 100%;
+        height: 520px;
+        padding-top: 30px;
+    }
+    .power p {
+        font-size: 20px;
+    }
+    .power p>img {
+        width: 30px;
+        height: 30px;
+    }
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .icon i {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    .icon p {
+        font-size: 16px;
+        margin-top: -6px;
+    }
+
+    .about {
+        margin-top: 20px;
+        margin-left: 8px;
+    }
+    .about img {
+        width: 40px;
+        height: 40px;
+    }
+    .edu li {
+        font-size: 14px;
+    }
+    .edu li:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .career {
+        margin-left: 10px;
+    }
+    .career li {
+        font-family: 'Happiness-Sans-Title';
+        font-size: 14px;
+    }
+    .career li:nth-child(1) {
+        font-size: 20px;
+    }
+}

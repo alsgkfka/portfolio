@@ -30,19 +30,34 @@ $(document).ready(function(){
     // banner slide
 
     
-    let b = 0;
-    setInterval(function(){
+    // let b = 0;
+    // setInterval(function(){
 
-        if(b<3)
-        b++;
-        if(b==3)
-        b=0;
+    //     if(b<3)
+    //     b++;
+    //     if(b==3)
+    //     b=0;
 
-        let wd = $('.banner li').width()
+    //     let wd = $('.banner li').width()
 
-        $('.banner ul').css({ left : -wd*b })
+    //     $('.banner ul').css({ left : -wd*b })
 
-    },3500)
+    // },3800)
+
+    // cart
+    let i = 1;
+
+    $('.cart').click(function(){
+    
+        
+        $('.util p').text(i++)
+
+    })
+
+    $('.util li').click(function(){
+
+        alert('로그인 후 사용하세요.')
+    });
 
 
 
