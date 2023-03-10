@@ -25,26 +25,20 @@ a {
     text-decoration: none;
     color: #000;
 }
-<<<<<<< HEAD
-=======
 body {
     overflow-x: hidden;
 }
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 /* 임시 */
 section {
     width: 100%;
     height: 980px;
 }
-<<<<<<< HEAD
-=======
 h1 {
     position: fixed;
     z-index: 100;
     color: tomato;
     font-size: 40px;
 }
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 /* Main Setting */
 #main {}
 nav {
@@ -89,12 +83,9 @@ nav li:hover span {
 nav li.on span{
     width: 100%;
 }
-<<<<<<< HEAD
-=======
 .menu_toggle_btn {
     display: none;
 }
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 
 .mainPage {
     display: flex;
@@ -178,12 +169,7 @@ nav li.on span{
 .inner {
     display: flex;
     width: 100%;
-<<<<<<< HEAD
-    height: 980px;/* 임시 */
-    margin-top: 30px;
-=======
     height: 950px;/* 임시 */
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .pageL {
     position: relative;
@@ -191,21 +177,13 @@ nav li.on span{
     width: 49.5%;
     height: auto;
     background-color: #F7A7BB;
-<<<<<<< HEAD
-    clip-path: polygon(2% 7%, 100% 1%, 100% 99%, 3% 99%);
-=======
     clip-path: polygon(2% 3%, 100% 1%, 100% 99%, 3% 99%);
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .bTxt {
     position: absolute;
     left: 35%;
     top: 5%;
-<<<<<<< HEAD
-    width: 350px;
-=======
     width: 38%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     z-index: 10;
 }
@@ -214,11 +192,7 @@ nav li.on span{
     left: 7%;
     bottom: 3%;
     transform: rotate(-10deg);
-<<<<<<< HEAD
-    width: 280px;
-=======
     width: 26%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     z-index: 3;
     filter: drop-shadow(3px 3px 5px black);
@@ -228,11 +202,7 @@ nav li.on span{
     left: 35%;
     top: 36%;
     transform: rotate(0);
-<<<<<<< HEAD
-    width: 280px;
-=======
     width: 27%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     z-index: 3;
     filter: drop-shadow(3px 3px 5px black);
@@ -240,15 +210,9 @@ nav li.on span{
 .b3 {
     position: absolute;
     left: 5%;
-<<<<<<< HEAD
-    top: 30%;
-    transform: rotate(5deg);
-    width: 340px;
-=======
     top: 33%;
     transform: rotate(5deg);
     width: 30%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
     z-index: 2;
@@ -258,43 +222,25 @@ nav li.on span{
     right: 3%;
     top: 3%;
     transform: rotate(10deg);
-<<<<<<< HEAD
-    width: 180px;
-=======
     width: 20%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(2px 2px 5px black);
 }
 .b5 {
     position: absolute;
-<<<<<<< HEAD
-    right: 40%;
-    bottom: 3%;
-    transform: rotate(3deg);
-    width: 180px;
-=======
     right: 42%;
     bottom: 3%;
     transform: rotate(3deg);
     width: 19%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
 .b6 {
     position: absolute;
-<<<<<<< HEAD
-    right: 2%;
-    top: 40%;
-    transform: rotate(5deg);
-    width: 320px;
-=======
     right: 4%;
     top: 40%;
     transform: rotate(5deg);
     width: 32%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -303,11 +249,7 @@ nav li.on span{
     right: 2%;
     bottom: 18%;
     transform: rotate(-8deg);
-<<<<<<< HEAD
-    width: 160px;
-=======
     width: 20%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -316,11 +258,7 @@ nav li.on span{
     top: 3%;
     left: 12%;
     transform: rotate(-10deg);
-<<<<<<< HEAD
-    width: 160px;
-=======
     width: 18%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -329,11 +267,7 @@ nav li.on span{
     right: 11%;
     bottom: -4%;
     transform: rotate(-95deg);
-<<<<<<< HEAD
-    width: 220px;
-=======
     width: 24%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -355,12 +289,6 @@ nav li.on span{
     top: 5%;
     left: 8%;
 }
-<<<<<<< HEAD
-.t2 {
-    position: absolute;
-    width: 48%;
-    top: 13%;
-=======
 .pageR li:nth-child(1) {
     position: relative;
     width: 100%;
@@ -383,7 +311,6 @@ nav li.on span{
     position: absolute;
     width: 48%;
     top: 10%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
     left: 8%;
     line-height: 1.8;
     font-family: 'Nanum Gothic Coding', monospace;
@@ -413,14 +340,9 @@ nav li.on span{
     position: absolute;
     right: 5%;
     top: 5%;
-<<<<<<< HEAD
-    width: 340px;
-    height: auto;
-=======
     width: 36%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .p2 {
     position: absolute;
@@ -430,12 +352,6 @@ nav li.on span{
 }
 .p3 {
     position: absolute;
-<<<<<<< HEAD
-    left: 8%;
-    top: 30%;
-    width: 380px;
-    height: auto;
-=======
     left: 6%;
     top: 30%;
     width: 40%;
@@ -444,56 +360,38 @@ nav li.on span{
 }
 .p3:hover {
     transform: rotate(10deg);
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .p4 {
     position: absolute;
     right: 10%;
     bottom: 0;
-<<<<<<< HEAD
-    width: 250px;
-    transform: rotate(10deg);
-=======
     width: 26%;
     height: auto;
     transform: rotate(10deg);
     filter: drop-shadow(3px 3px 5px black);
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .p5 {
     position: absolute;
     right: 3%;
     bottom: 0;
-<<<<<<< HEAD
-    width: 150px;
-=======
     width: 16%;
     height: auto;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .p6 {
     position: absolute;
     right: 35%;
     bottom: 27%;
-<<<<<<< HEAD
-    width: 250px;
-=======
     width: 24%;
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .p7 {
     position: absolute;
     right: 30%;
     bottom: 0;
-<<<<<<< HEAD
-    width: 180px;
-=======
     width: 19%;
     transition: all 1.2s;
 }
 .p7:hover {
     transform: rotateY(180deg);
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
 }
 .mid {
     width: 16px;
@@ -505,19 +403,6 @@ nav li.on span{
 
 
 /* Brand Settings */
-<<<<<<< HEAD
-#brand {
-    background-color: #0d0d0d;
-}
-.trail {}
-.trail>article {
-    width: 600px;
-    height: 800px;
-    background-color: #eee;
-}
-.overlay {}
-.btn {}
-=======
 #brand {}
 .brandList {
     width: 100%;
@@ -556,7 +441,7 @@ nav li.on span{
     background-size: cover;
 }
 .brandList li:nth-child(5) {
-    background: url(img/tabm_thumb.jpg) center center no-repeat;
+    background: url(img/tamb_thumb.jpg) center center no-repeat;
     background-size: cover;
 }
 .brandList li:hover {
@@ -1858,4 +1743,3 @@ nav li.on span{
             height: 80%;
         }
     }
->>>>>>> 89644fbd6a35c83893841b3869c213bc309014bd
