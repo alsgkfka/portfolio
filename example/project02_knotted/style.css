@@ -437,6 +437,9 @@ h2 {
     justify-content: start;
     animation: dn 60s linear infinite;
 }
+.dn:hover {
+    animation-play-state: paused;
+}
 .dn li {
     background-color: #F7C8DA;
     border-radius: 50%;
@@ -478,6 +481,9 @@ h2 {
     padding: 10px 0;
     right: 0;
     animation: cake 60s linear infinite;
+}
+.cake:hover {
+    animation-play-state: paused;
 }
 .cake li {
     background-color: #fff;
@@ -712,56 +718,40 @@ h2 {
     width: 70%;
     height: 500px;
 }
-.big ul {}
-.big li:nth-child(1) {
+.big ul {
+    margin: 50px;
+}
+.big li {
     position: absolute;
-    left: 0;
+    left: 50px;
+    top: 150px;
+    width: 450px;
+    height: 450px;
+}
+.big li:nth-child(1) {
     background: url(img/goods6.png);
     background-size: contain;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     opacity: 1;
     z-index: 1;
 }
 .big li:nth-child(2) {
-    position: absolute;
-    left: 0;
     background: url(img/detail2.png);
     background-size: contain;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     opacity: 0;
 }
 .big li:nth-child(3) {
-    position: absolute;
-    left: 0;
     background: url(img/detail3.png);
     background-size: contain;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     opacity: 0;
 }
 .big li:nth-child(4) {
-    position: absolute;
-    left: 0;
     background: url(img/detail4.png);
     background-size: contain;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     opacity: 0;
 }
 .big li:nth-child(5) {
-    position: absolute;
-    left: 0;
     background: url(img/detail5.png);
     background-size: contain;
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
     opacity: 0;
 }
 .small {
@@ -821,7 +811,7 @@ h2 {
     height: 100%;
     background-color: #d9d9d9;
     padding-bottom: 10px;
-    transition: all 0.7s;
+    transition: all 0.3s;
 }
 .small li.on {
     opacity: 1;
@@ -1112,6 +1102,7 @@ h2 {
     font-size: 24px;
     margin-left: 10px;
     opacity: 0.6;
+    cursor: pointer;
 }
 #qna i:hover {
     opacity: 1;

@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         
     let wd = $(window).width();
-    if (wd<1025){
+    if(wd<1025){
         $('.btn1').click(function(){
             $('#main').css({opacity : '0'})
             $('#main').css({'z-index' : '-1'})
@@ -108,12 +108,10 @@ $(document).ready(function(){
     })
 
     $('.con').click(function(){
-        $('.popup').css({display  : 'block'} , 600)
+        $('.popup').css({display  : 'block'})
     })
+
     $('.exit').click(function(){
         $('.popup').css({display  : 'none'})
     })
-
-    
-
 })

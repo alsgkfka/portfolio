@@ -14,7 +14,7 @@ $(document).ready(function(){
         a++;
 
         let liWd = $('.product li').width()
-        $('.product ul').css({'left':(-liWd+20)*a})
+        $('.product ul').css({'left':(-liWd+10)*a})
 
     })
 
@@ -23,7 +23,7 @@ $(document).ready(function(){
         a--;
 
         let liWd = $('.product li').width()
-        $('.product ul').css({'left':(-liWd+20)*a})
+        $('.product ul').css({'left':(-liWd+10)*a})
 
     })
 
@@ -84,8 +84,21 @@ $(document).ready(function(){
 
 
 
+        $('#qna i').click(function(){
 
-        for(var b=0; b>5; b++)
+            alert('내용을 입력하세요!')
+        })
+
+        
+        // let b = 0;
+        // b++
+        //     $('.small li').eq(b).click(function(){
+        //         $('.big li').css({opacity : 0})
+        //         $('.big li').css({'z-index' : -1})
+        //         $('.big li').eq(b).css({opacity : 1})
+        //         $('.big li').eq(b).css({'z-index' : 1})
+        //     })
+        
         
         $('.small li').eq(0).click(function(){
             $('.big li').eq(0).css({opacity : 1})
