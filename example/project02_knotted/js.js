@@ -47,17 +47,110 @@ $(document).ready(function(){
     // cart
     let i = 1;
 
-    $('.cart').click(function(){
-    
+        $('.cart').click(function(){
         
-        $('.util p').text(i++)
+            
+            $('.util p').text(i++)
 
-    })
+        })
 
-    $('.util li').click(function(){
+        $('.util li').click(function(){
 
-        alert('로그인 후 사용하세요.')
-    });
+            alert('로그인 후 사용하세요.')
+        })
+
+        
+        $('.num li').eq(0).click(function(){
+            $('.num li').eq(1).text(i--)
+        })
+
+        $('.num li').eq(2).click(function(){
+            $('.num li').eq(1).text(i++)
+        })
+
+
+        $('.buyBtn').click(function(){
+        
+            
+            $('.util p').text(i-1)
+
+        })
+
+
+        $('.small li').click(function(){
+            $('.small li').removeClass('on')
+            $(this).addClass('on')
+        })
+
+
+
+
+        for(var b=0; b>5; b++)
+        
+        $('.small li').eq(0).click(function(){
+            $('.big li').eq(0).css({opacity : 1})
+            $('.big li').eq(0).css({'z-index' : 1})
+            $('.big li').eq(1).css({opacity : 0})
+            $('.big li').eq(1).css({'z-index' : -1})
+            $('.big li').eq(2).css({opacity : 0})
+            $('.big li').eq(2).css({'z-index' : -1})
+            $('.big li').eq(3).css({opacity : 0})
+            $('.big li').eq(3).css({'z-index' : -1})
+            $('.big li').eq(4).css({opacity : 0})
+            $('.big li').eq(4).css({'z-index' : -1})
+        })
+
+        $('.small li').eq(1).click(function(){
+            $('.big li').eq(1).css({opacity : 1})
+            $('.big li').eq(1).css({'z-index' : 1})
+            $('.big li').eq(0).css({opacity : 0})
+            $('.big li').eq(0).css({'z-index' : -1})
+            $('.big li').eq(2).css({opacity : 0})
+            $('.big li').eq(2).css({'z-index' : -1})
+            $('.big li').eq(3).css({opacity : 0})
+            $('.big li').eq(3).css({'z-index' : -1})
+            $('.big li').eq(4).css({opacity : 0})
+            $('.big li').eq(4).css({'z-index' : -1})
+        })
+
+        $('.small li').eq(2).click(function(){
+            $('.big li').eq(2).css({opacity : 1})
+            $('.big li').eq(2).css({'z-index' : 1})
+            $('.big li').eq(1).css({opacity : 0})
+            $('.big li').eq(1).css({'z-index' : -1})
+            $('.big li').eq(0).css({opacity : 0})
+            $('.big li').eq(0).css({'z-index' : -1})
+            $('.big li').eq(3).css({opacity : 0})
+            $('.big li').eq(3).css({'z-index' : -1})
+            $('.big li').eq(4).css({opacity : 0})
+            $('.big li').eq(4).css({'z-index' : -1})
+        })
+
+        $('.small li').eq(3).click(function(){
+            $('.big li').eq(3).css({opacity : 1})
+            $('.big li').eq(3).css({'z-index' : 1})
+            $('.big li').eq(1).css({opacity : 0})
+            $('.big li').eq(1).css({'z-index' : -1})
+            $('.big li').eq(2).css({opacity : 0})
+            $('.big li').eq(2).css({'z-index' : -1})
+            $('.big li').eq(0).css({opacity : 0})
+            $('.big li').eq(0).css({'z-index' : -1})
+            $('.big li').eq(4).css({opacity : 0})
+            $('.big li').eq(4).css({'z-index' : -1})
+        })
+
+        $('.small li').eq(4).click(function(){
+            $('.big li').eq(4).css({opacity : 1})
+            $('.big li').eq(4).css({'z-index' : 1})
+            $('.big li').eq(1).css({opacity : 0})
+            $('.big li').eq(1).css({'z-index' : -1})
+            $('.big li').eq(2).css({opacity : 0})
+            $('.big li').eq(2).css({'z-index' : -1})
+            $('.big li').eq(3).css({opacity : 0})
+            $('.big li').eq(3).css({'z-index' : -1})
+            $('.big li').eq(0).css({opacity : 0})
+            $('.big li').eq(0).css({'z-index' : -1})
+        })
 
 
 
