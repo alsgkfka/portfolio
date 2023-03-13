@@ -529,7 +529,8 @@ h2 {
 .moreBtn:hover {
     background-color: #A0CAE0;
 }
-
+/* -----SubPage2------ */
+/* bake */
 /* goods */
 #goods {}
 .banner {
@@ -690,6 +691,8 @@ h2 {
     filter: drop-shadow(3px 3px 5px #333);
 }
 
+
+/* -----Subpage------ */
 /* goodsDetail */
 #goodsDetail {
     display: block;
@@ -917,7 +920,6 @@ h2 {
     background-color: #d9d9d9;
     color: #333;
 }
-
 /* store */
 #store {
     width: 100%;
