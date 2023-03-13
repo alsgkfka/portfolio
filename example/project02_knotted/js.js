@@ -1,8 +1,9 @@
 $(document).ready(function(){
-
+    
     // toggle menu set
-    $('.menu_toggle_btn').click(function(){
+    $('#hamburger').click(function(){
         $('.menu').slideToggle()
+        $(this).toggleClass("is-active");
     })
 
 
@@ -27,6 +28,7 @@ $(document).ready(function(){
 
     })
 
+    
     // banner slide
 
     

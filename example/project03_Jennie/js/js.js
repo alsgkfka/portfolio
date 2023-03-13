@@ -75,6 +75,9 @@ $(document).ready(function(){
 
     })
 
+    let ww = $(window).width();
+    if(ww>1900){}
+
     $(window).scroll(function(){
         let st = $(window).scrollTop();
         // $('h1').text(st)

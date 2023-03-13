@@ -31,7 +31,7 @@ body {
 /* 임시 */
 section {
     width: 100%;
-    height: 980px;
+    height: 900px;
 }
 h1 {
     position: fixed;
@@ -40,7 +40,10 @@ h1 {
     font-size: 40px;
 }
 /* Main Setting */
-#main {}
+#main {
+    width: 100%;
+    height: 850px;
+}
 nav {
     position: fixed;
     left: 3%;
@@ -169,13 +172,13 @@ nav li.on span{
 .inner {
     display: flex;
     width: 100%;
-    height: 950px;/* 임시 */
+    height: 850px;/* 임시 */
 }
 .pageL {
     position: relative;
     display: block;
     width: 49.5%;
-    height: auto;
+    height: 100%;
     background-color: #F7A7BB;
     clip-path: polygon(2% 3%, 100% 1%, 100% 99%, 3% 99%);
 }
@@ -237,10 +240,10 @@ nav li.on span{
 }
 .b6 {
     position: absolute;
-    right: 4%;
+    right: 10%;
     top: 40%;
     transform: rotate(5deg);
-    width: 32%;
+    width: 26%;
     height: auto;
     filter: drop-shadow(3px 3px 5px black);
 }
@@ -349,11 +352,12 @@ nav li.on span{
     right: 3%;
     top: 30%;
     animation: down linear infinite 10s;
+    width: 300px;
 }
 .p3 {
     position: absolute;
     left: 6%;
-    top: 30%;
+    top: 36%;
     width: 40%;
     height: auto;
     filter: drop-shadow(3px 3px 5px gray);
@@ -364,7 +368,7 @@ nav li.on span{
 .p4 {
     position: absolute;
     right: 10%;
-    bottom: 0;
+    bottom: -6%;
     width: 26%;
     height: auto;
     transform: rotate(10deg);
@@ -373,14 +377,14 @@ nav li.on span{
 .p5 {
     position: absolute;
     right: 3%;
-    bottom: 0;
+    bottom: -6%;
     width: 16%;
     height: auto;
 }
 .p6 {
     position: absolute;
     right: 35%;
-    bottom: 27%;
+    bottom: 2%;
     width: 24%;
 }
 .p7 {
@@ -690,6 +694,50 @@ nav li.on span{
     height: 100%;
 }
 .songinfo {
+    width: 30%;
+    display: block;
+    float: left;
+    clear: both;
+}
+.album img {
+    width: 250px;
+    height: 250px;
+    margin-top: 50%;
+    margin-left: 20%;
+}
+.more {
+    display: block;
+    background-color: #F7A7BB;
+    width: 280px;
+    height: 280px;
+    margin-top: 14.8%;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    box-shadow: 2px 2px 10px black inset;
+}
+.more p {
+    font-family: 'Nanum Gothic Coding', monospace; 
+    padding-top: 200px;
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.more:hover a {
+    color: #fff;
+}
+.mv {
+    display: block;
+    width: 70%;
+    float: left;
+    clear: both;
+}
+.mv iframe {
+    display: block;
+    margin-top: 8%;
+    margin-left: 5%;
+    width:90%;
+    height: 80%;
+} 
+/* .songinfo {
     position: relative;
     width: 20%;
     height: 100%;
@@ -733,7 +781,7 @@ nav li.on span{
     margin-left: 5%;
     width:90%;
     height: 80%;
-}
+} */
 
 /* $$$$$$$$$$$jquery$$$$$$$$$$$$$ */
 
@@ -1680,18 +1728,114 @@ nav li.on span{
         }
         
         
+        
+        
         #calvin {
             display: block;
             width: 100%;
-            height: 700px;
+            height: 800px;
             display: none;
+            overflow: hidden;
+        }
+        .calTrail {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+        .calTrail ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.8s;
+        }
+        .calTrail li {
+            width: 100%;
+            height: auto;
+            margin-right: 40px;
+        }
+        .next {
+            position: absolute;
+            color: #eee;
+            font-size: 40px;
+            width: 50px;
+            height: 60px;
+            text-align: center;
+            cursor: pointer;
+            top: 60%;
+            right: 50px;
+        }
+        .next:hover {
+            background-color: #333;
+        }
+        .prev {
+            position: absolute;
+            color: #eee;
+            font-size: 40px;
+            width: 50px;
+            height: 60px;
+            text-align: center;
+            cursor: pointer;
+            top: 60%;
+            left: 50px;
+            opacity: 0.3;
+        }
+        .prev:hover {
+            background-color: #333;
+            opacity: 1;
         }
         
         
         #gentle {
             display: block;
             width: 100%;
+            height:1150px;
             background-color: #fff;
+            position: relative;
+        }
+        .fir {
+            background-color: #000;
+        }
+        .fir img {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+        }
+        .sec {
+            width: 100%;
+            opacity: 0;
+        }
+        .sec img:nth-child(1) {
+            position: absolute;
+            left: -30%;
+            display: block;
+            width: 40%;
+            height: auto;
+        }
+        .sec img:nth-child(2) {
+            position: absolute;
+            right: -40%;
+            display: block;
+            width: 50%;
+            height: auto;
+            float: left;
+        }
+        .thd {
+            display: none;
+        }
+        .thd ul {}
+        .thd img:nth-child(1) {
+            display: none;
+        }
+        .thd img:nth-child(2) {
+            display: none;
+        
+        }
+        .thd img:nth-child(3) {
+            display: none;
         }
         /* music Settinsgs */
         #music {
