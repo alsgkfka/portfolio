@@ -168,5 +168,29 @@ $(document).ready(function(){
         })
 
 
+        $('.tab li').click(function(){
+            $('.tab li').removeClass('on')
+            $(this).addClass('on')
+        })
+
+        $('.tab li').eq(0).click(function(){
+            $('.inner1').css({display : 'block'})
+            $('.inner2').css({display : 'none'})
+            $('.inner3').css({display : 'none'})
+        })
+
+        $('.tab li').eq(1).click(function(){
+            $('.inner2').css({display : 'block'})
+            $('.inner1').css({display : 'none'})
+            $('.inner3').css({display : 'none'})
+        })
+
+        $('.tab li').eq(2).click(function(){
+            $('.inner3').css({display : 'block'})
+            $('.inner1').css({display : 'none'})
+            $('.inner2').css({display : 'none'})
+        })
+
+
 
 })

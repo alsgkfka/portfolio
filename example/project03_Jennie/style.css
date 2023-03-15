@@ -42,7 +42,6 @@ h1 {
 /* Main Setting */
 #main {
     width: 100%;
-    height: 850px;
 }
 nav {
     position: fixed;
@@ -168,11 +167,13 @@ nav li.on span{
 }
 
 /* About Settigs */
-#about {}
+#about {
+    padding: 100px 0;
+}
 .inner {
     display: flex;
     width: 100%;
-    height: 850px;/* 임시 */
+    height: 900px;
 }
 .pageL {
     position: relative;
@@ -384,7 +385,7 @@ nav li.on span{
 .p6 {
     position: absolute;
     right: 35%;
-    bottom: 2%;
+    bottom: 24%;
     width: 24%;
 }
 .p7 {
@@ -410,7 +411,7 @@ nav li.on span{
 #brand {}
 .brandList {
     width: 100%;
-    height: 100%;
+    height: 900px;
     background-color: #000;
 }
 .brandList ul {

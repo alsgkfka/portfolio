@@ -562,7 +562,26 @@ h2 {
     height: 100%;
     margin: 0 auto;
 }
-.inner {
+.inner1 {
+    display: block;
+    background-color: #FFEB8F;
+    border: 2px #715F0C solid;
+    border-radius: 10px;
+    width: 97%;
+    height: 90%;
+    margin: 1% auto;
+}
+.inner2 {
+    display: none;
+    background-color: #FFEB8F;
+    border: 2px #715F0C solid;
+    border-radius: 10px;
+    width: 97%;
+    height: 90%;
+    margin: 1% auto;
+}
+.inner3 {
+    display: none;
     background-color: #FFEB8F;
     border: 2px #715F0C solid;
     border-radius: 10px;
@@ -595,36 +614,62 @@ h2 {
     margin-right: 20px;
     font-size: 18px;
     color: #715F0C;
+    cursor: pointer;
 }
 .tab li.on {
     text-decoration: underline 1px #715F0C;
 }
 
-.inner h1 {
+.inner1 h1 {
     text-align: center;
     font-size: 24px;
     color: #715F0C;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
-.pic {
-    display: flex;
-    align-items: center;
+.inner2 h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #715F0C;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.inner3 h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #715F0C;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.bakeList {
+    display: grid;
+    width: 100%; 
+    align-items: center ;
     justify-content: space-around;
 }
-.pic li {
-    display: block;
+.bakeList li {
     text-align: center;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 20px 0;
+    cursor: pointer;
+    padding-bottom: 30px;
+    display: inline-grid;
+    margin-right: 20px;
 }
-.pic li img {
+.img {}
+.img>img {
+    background: #fff;
     width: 140px;
     height: 140px;
 }
-
-
+.bakeList p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+.bakeList span {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
 
 
 
